@@ -4,7 +4,7 @@
 
 ### Introduction
 
-Mithril, Angular, and React (as an ecosystem) are all software systems that support different ways of writing User Interfaces (UIs) in JavaScript for single-page applications that run in web browsers. The choice you make of them has different implications about how you write you code, how you debug it, and the end-user experience based on how you spend your time (i.e. whether you spend your time on essential complexity of the UI task instead of spending time on [accidental complexity](https://en.wikipedia.org/wiki/Accidental_complexity) introduced by your tool choice). Each tool also has implications related to developer training and availability of third-party components.
+Mithril, Angular, and React (as an ecosystem) are all software systems that support different ways of writing User Interfaces (UIs) in JavaScript for single-page applications that run in web browsers. The choice you make of which to use has different implications about how you write you code, how you debug it, and the end-user experience based on how you spend your time (i.e. whether you spend your time on essential complexity of the UI task instead of spending time on [accidental complexity](https://en.wikipedia.org/wiki/Accidental_complexity) introduced by your tool choice). Each tool also has implications related to developer training and availability of third-party components.
 
 While there are many differences, most fall into roughly these categories for Angular, React, and Mithril:
 
