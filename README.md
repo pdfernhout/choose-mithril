@@ -101,7 +101,7 @@ As above, because of Zones and RxJS, Angular tends to at first be very hard to d
 
 React tends to be medium hard (sometimes even easy) to debug if you stick with using setState with components. Unfortunately, almost certainly someone will want to start off with Redux and Redux-Saga "just in case you might need it later", and so React debugging in practice can become highly difficult -- although probably never as difficult as when Angular goes wrong.
 
-Mithril is usually a joy to debug. There are still some well-understood pitfalls for new users. Those include setting the value in an input but not having an oninput or onchange handler. They also include forgetting to call redraw in a setTimeout callback or after a fetch request completes. Mithril's error reporting admittedly is also as good as React's. Overall, I consider those a small price to pay for code that otherwise is straightforward to write, debug, refactor, and maintain.
+Mithril is usually a joy to debug. There are still some well-understood pitfalls for new users. Those include setting the value in an input but not having an oninput or onchange handler. They also include forgetting to call redraw in a setTimeout callback or after a fetch request completes. Mithril's error reporting admittedly is not as good as React's. Overall, I consider those a small price to pay for code that otherwise is straightforward to write, debug, refactor, and maintain.
 
 ### Tooling required to get started: High vs. Medium vs. Low
 
