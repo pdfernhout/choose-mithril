@@ -132,7 +132,7 @@ Please don't confuse popularity with fitness for purpose. The most popular (high
 
 The fact that Leo Horie's Mithril -- a project started by one brilliant, kind, and generous person and now supported by a few volunteers -- can attract as much interest and support as it does relative to Facebook's React and Google's Angular (both backed by millions of dollars of paid development and free publicity) implies a lot about Mithril's technical advantages and developer ergonomics.
 
-YMMV (Your Mileage May Vary) of course. The above is just based on my limited personal experience -- and what I have learned from reading about the experiences of other software developers. Elm and ClojureScript are worth exploring too if you have a broader choice of languages. My thanks go to Leo Horie, Mithril's brilliant creator, and the small group of quirky individuals who as a team maintain Mithril as a labor-of-love and who continue to demonstrate its use in ever-more amazing ways.
+YMMV (Your Mileage May Vary) of course. The above is just based on my limited personal experience -- and what I have learned from reading about the experiences of other software developers. Elm and ClojureScript are worth exploring too if you have a broader choice of languages. My thanks go to Leo Horie, Mithril's brilliant creator, and the small team of volunteers who maintain Mithril as a labor-of-love and who continue to demonstrate its use in ever-more amazing ways.
 
 A list of some of the companies and projects using Mithril can be found here:  
 https://github.com/MithrilJS/mithril.js/wiki/Who-Uses-Mithril 
