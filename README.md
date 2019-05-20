@@ -40,6 +40,7 @@ As an [example modified from the Mithril.js.org website](https://mithril.js.org/
           view: function() {
             return m("main", [
               m("h1", "Hello world"),
+              m("ul", ["a", "b", c"].map(letter => m("li", letter))
             ])
           }
         }
@@ -51,12 +52,13 @@ As an [example modified from the Mithril.js.org website](https://mithril.js.org/
             return (
               <main>
                 <h1>Hello world</h1>
+                <ul> { ["a", "b", c"].map(letter => <li>{letter}</li>) } </ul>
               </main>
             )
           }
         }
 
-The reason development team after development team makes the mistake of choosing templates or JSX over using the HyperScript API is that templates and JSX kind of look familiar because they look similar to HMTL at first glance (even though they are not standard HML and have various gotchas). HyperScript is much simpler -- but it it not immediately familiar. Rich Hickey in ["Simple made Easy"](https://www.infoq.com/presentations/Simple-Made-Easy) goes into detail on the negative consequences of people mistaking familiarity for simplicity. Essentially, simple + simple + simple can add up to simple, whereas easy + easy + easy can add up to complicated and difficult to deal with overall.
+The reason development team after development team makes the mistake of choosing templates or JSX over using the HyperScript API is that templates and JSX kind-of look familiar because they look similar to HMTL at first glance. What is not so obvious at first glance is that templates and JSX are not standard HML and they both have various gotchas. Bothtemplates and JSX rapidly become harder to read as the UI code gets more complex like with loops and conditionals involving switching back and forth repeatedly between HTML and JavaScript. HyperScript is much simpler since it is all just JavaScript -- but HyperScript it not immediately familiar to someone who has spent years defining UIs using HTML-ish templates. Rich Hickey in ["Simple made Easy"](https://www.infoq.com/presentations/Simple-Made-Easy) goes into detail on the negative consequences of people mistaking familiarity for simplicity. Essentially, simple + simple + simple can add up to simple, whereas easy + easy + easy can add up to complicated and difficult to deal with overall.
 
 ### Typical styling: Virtualized by component vs. Semantic Tooling vs. Functional/Atomic
 
