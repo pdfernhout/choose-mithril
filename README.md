@@ -32,6 +32,30 @@ React apps also define UI elements using a nonstandard somewhat-HTML-like templa
 
 Mithril apps usually define UI elements using the "HyperScript" API. For people who know React, the HyperScript API is almost equivalent to adding "const h = React.createElement()" at the top of your file and then using h("elementName", ...) calls in your code to define the UI -- where the h(...) calls ultimately result in assembling or modifying a tree of HTML elements in the browser the same way JSX does that. Mithril actually uses "m(...)" instead of the more common "h(...)" for HyperScript API calls -- the m standing for Mithril. The main advantage of the HyperScript API over using HTML-ish templates or JSX is that you just write your UIs in plain JavaScript. There learning curve of the HyperScript API is very low for any JavaScript developer -- and then a developer can leverage all their JavaScript knowledge to define, debug, and refactor UIs. There is also no need for an additional build step making it easier to get started with development -- unless you need a buil step for other reasons like to use TypeScript or Saas/SCSS. It is true that the HyperScript API may look unfamiliar to developers used to coding UIs using HTML-ish templates, but once developer learn the new approach (in a matter of hours), they can discard as obsolete all the non-standard templating languages they learned. Multiple UI libraries support HyperScript (using with "h" instead of "m" though), so that new knowledge can be leveraged in lots of places. As a bonus, the HyperScript API supports setting CSS classes by adding them after the element name, so "div.class1.class2#id3" defined an HTML div with two classes on it and an id. For all these reasons, HyperScript code tends to be both more concise then HTML templates or JSX -- while also being more readable once someone becomes familiar with it.
 
+As an [example modified from the Mithril.js.org website](https://mithril.js.org/jsx.html):
+
+        // The HyperScript API calls in plain Mithril:
+        
+        var MyComponent = {
+          view: function() {
+            return m("main", [
+              m("h1", "Hello world"),
+            ])
+          }
+        }
+
+        // can be re-written in JSX as:
+        
+        var MyComponent = {
+          view: function() {
+            return (
+              <main>
+                <h1>Hello world</h1>
+              </main>
+            )
+          }
+        }
+
 The reason development team after development team makes the mistake of choosing templates or JSX over using the HyperScript API is that templates and JSX kind of look familiar because they look similar to HMTL at first glance (even though they are not standard HML and have various gotchas). HyperScript is much simpler -- but it it not immediately familiar. Rich Hickey in ["Simple made Easy"](https://www.infoq.com/presentations/Simple-Made-Easy) goes into detail on the negative consequences of people mistaking familiarity for simplicity. Essentially, simple + simple + simple can add up to simple, whereas easy + easy + easy can add up to complicated and difficult to deal with overall.
 
 ### Typical styling: Virtualized by component vs. Semantic Tooling vs. Functional/Atomic
