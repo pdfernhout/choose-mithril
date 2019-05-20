@@ -15,6 +15,7 @@ Typical styling | Virtualized by component | Semantic Tooling | Functional/Atomi
 Redraw approach | Dirty Checking | State Changes | User Action
 Data model | Component & Services | Component or Redux | Flexible
 Complexity of debugging | Very High | Medium to High | Low
+Tooling required to get started | High | Medium | Low
 Size of library and learning curve | Large | Medium | Small
 Availability of third-party components | Medium | Large | Small
 
@@ -101,6 +102,14 @@ As above, because of Zones and RxJS, Angular tends to at first be very hard to d
 React tends to be medium hard (sometimes even easy) to debug if you stick with using setState with components. Unfortunately, almost certainly someone will want to start off with Redux and Redux-Saga "just in case you might need it later", and so React debugging in practice can become highly difficult -- although probably never as difficult as when Angular goes wrong.
 
 Mithril is usually a joy to debug. There are still some well-understood pitfalls for new users. Those include setting the value in an input but not having an oninput or onchange handler. They also include forgetting to call redraw in a setTimeout callback or after a fetch request completes. Mithril's error reporting admittedly is also as good as React's. Overall, I consider those a small price to pay for code that otherwise is straightforward to write, debug, refactor, and maintain.
+
+### Tooling required to get started: High vs. Medium vs. Low
+
+Angular requires substantial tooling to get started. In practice, you need to load a lot of NPM packages, set up TypeScript (which I personally like), set up Webpack, and so on. You can find starter projects, but they are complex.
+
+React requires some tooling to get started, typically Babel or TypeScript to compile JSX, and likely some kind of CSS pre-processor like Saas. You also typically need a bundler like Webpack or similar (even as in theory the output of transpiling JSX could be loaded directly in the browser). Again, as with Angular, there are starter projects or tools to generate projects. While not as complex as the scaffolding Angular needs, these React starter projects still have a lot going on under the hood.
+
+Mithril lets you get started by writing (typically) one stub HTML file which loads the 8K gzipped Mithril library from a CDN or locally, and then you load your JavaScript file. Modern JavaScript now supports importing modules, but otherwise if you want to support older browsers or use certain libraries you might eventually add System.js or Require.js or similar. If you use Tachyons for Atomic/Functional CSS styling, you just add a stylesheet link to a CDN or local Tachyons stylesheet. If you want to, say, use TypeScript with Mithril, you can add a build step for compilation -- but it is not required. Eventually you might decide you need some kind of bundling step, but you don't need one to get started with Mithril.
 
 ### Size of library and learning curve: Large vs. Medium vs. Small
 
