@@ -18,7 +18,7 @@ Complexity of debugging | Very High | Medium to High | Low
 Size of library and learning curve | Large | Medium | Small
 Availability of third-party components | Medium | Large | Small
 
-I will explain these in more detail in the following sections. Because JavaScript is so flexible, what follows is generalizations based on community prFactices and norms. You can of course do anything with any of these libraries. But in practice you won't because of different development cultures which put pressure on you to conform to group norms especially within a corporate setting.
+I will explain these in more detail in the following sections. Because JavaScript is so flexible, what follows is generalizations based on community practices and norms. You can of course do anything with any of these libraries. But in practice you won't because of different development cultures which put pressure on you to conform to group norms especially within a corporate setting.
 
 Also, while I discuss only three UI systems here, much of what I have to say about Angular and React also applies to other popular UI systems like Vue and Aurelia. Likewise, what I say about Mithril applies to some other vdom libraries that emphasize the HyperScript API like Maquette – as well as to a lesser extent about React itself if you use it with the HyperScript API instead of JSX and also make some other departures from common practices when using React.
 
